@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navBar {
+  height: 80px;
+  background-color: rgb(12, 12, 56);
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  color:#ebedee ;
+  gap: 20px;
+
+}
+.navBar img{
+  width: 50px;
+  height: 50px;
+}
+.navContain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.searchbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.searchbox input, button{
+  height:30px ;
+}
+
+.searchbox button{
+  background-color: #df550a;
+  border: none;
+  color: #ddd;
+
+  
+} 
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #7e97ab; /* Dark background */
+  color: rgb(239, 242, 249);
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(154, 25, 25, 0.1);
+}
+
+.footer-links {
+  margin-top: 5px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+.ButtonContainer {
+  display: flex;
+  justify-content:flex-end; 
+  width: 100%; 
+  margin-top: 3rem;
+ 
+}
+
+.HomeBtn {
+  width: 200px;
+  margin-right: 30px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: #0b7adb;
+  cursor: pointer;
+  color:whitesmoke;
+  font-weight: 800;
+}
+
+.home-title {
+  text-align: center;
+ 
+}
+ .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+    margin-top:20px;
+   
+   
+}
+.trow{
+  background-color: #adbdc0;
+  height: 50px;
+ 
+  
+}
+.table-body{
+  padding: 20px;
+}
+
+.table-container {
+  max-height: 350px;
+  overflow-y: auto;  
+ 
+}
+.table-container thead {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 50;
+}
+
+
+.form-card {
+  width: 90%;
+  max-width: 400px;
+  background: rgb(255, 252, 252);
+  padding: 25px;
+  margin: 50px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #df0458;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.form-container input:focus {
+  border-color: hsl(21, 92%, 42%);
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(5, 28, 232, 0.5);
+}
+
+.submit-btn {
+  width: 100%;
+  background: #269bef;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.btnEdit{
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+
+}
+
+.btEdit:hover{
+  background: #0056b3;
+}
+.btEdit{
+  width: 220px;
+  height: 40px;
+  background-color: #338fdf;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+.btCancel{
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: large;
+  background-color: #ee6464;
+}
+.btCancel:hover{
+  background-color: #f0515c;
+}
+
+.action-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ 
+}
+.delete-icon{
+
+  width: 20px;
+
+}
+.edit-icon{
+  height:20px;
+   width:25px;
+ 
+}
+
+.refreshbtn {
+  transition: transform 0.5s ease-in-out;
+  margin-left: 10px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* I have added media only for tab view not for mobile view */
+
+@media screen and (max-width: 769px) {
+ .searchbox button{
+  border: 2px solid red;
+  
+ }
+ .nav-title{
+  font-size:medium;
+  word-spacing:2px ;
+ }
+ .ButtonContainer{
+  justify-content: center;
+  margin-bottom: 20px;
+ }
+
+ .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.home-title{
+  font-size:25px;
+}
+  
+
+}
+
+ 
