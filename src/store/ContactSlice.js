@@ -43,8 +43,9 @@ const contactSlice = createSlice({
       }
     },
     filterContact: (state, action) => {
+      const searchItem=action.payload.toLowerCase();
       const filtered = state.contactList.filter(
-        (contact) => contact.name.toLowerCase() === action.payload.toLowerCase()
+        (contact) => contact.name.toLowerCase().includes(searchItem);
       );
       if(filtered.length===0){
         alert('Contact not found')
