@@ -7,7 +7,7 @@ export default function Footer() {
       <p>© 2025 Anuj Kumar Mishra. All Rights Reserved.</p>
       <div className="footer-links">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/apiDemo">About CRUD</Link>
         <a href="https://github.com/Anujmishra14" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </footer>
