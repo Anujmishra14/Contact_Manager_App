@@ -12,10 +12,9 @@ function Header() {
  
 
 
-  const filterMethod=(e)=>{
-    e.preventDefault()
-    setSearch(e.target.value)
-    dispatch(filterContact(search))
+  const filterMethod=(searchValue)=>{
+    setSearch(searchValue)
+    dispatch(filterContact(searchValue))
     
   }
   const refreshMethod = (e) => {
@@ -41,9 +40,9 @@ function Header() {
          type="text" 
          placeholder='Search Contact' 
          value={search}
-         onChange={(e)=>setSearch(e.target.value)}
+         onChange={(e)=>filterMethod(e.target.value)}
          />
-        <button onClick={filterMethod} style={{cursor:'pointer'}}>Search</button>
+       
 
   
         <svg xmlns="http://www.w3.org/2000/svg" 
