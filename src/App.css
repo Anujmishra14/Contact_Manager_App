@@ -30,18 +30,6 @@
   align-items: center;
  
 }
-.searchbox input, button{
-  height:30px ;
-}
-
-.searchbox button{
-  background-color: #df550a;
-  border: none;
-  color: #ddd;
-
-  
-} 
-
 
 .footer {
   position: fixed;
