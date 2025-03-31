@@ -30,6 +30,10 @@
   align-items: center;
  
 }
+.searchbox input{
+  height:30px ;
+}
+
 
 .footer {
   position: fixed;
@@ -241,10 +245,7 @@
 /* I have added media only for tab view not for mobile view */
 
 @media screen and (max-width: 769px) {
- .searchbox button{
-  border: 2px solid red;
-  
- }
+ 
  .nav-title{
   font-size:medium;
   word-spacing:2px ;
